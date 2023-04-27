@@ -1,0 +1,617 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 10000px;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========================================== Common ========================================================= */
+.main-content {
+    /* Box model */
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    /* Text */
+    text-decoration: none;
+}
+
+.btn {
+    /* Display and Box model */
+    display: inline-block;
+    min-width: 186px;
+    padding: 20px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 14px;
+    /* Text */
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    /* Color */
+    color: #ffffff;
+    background: var(--primary-color);
+    /* Others */
+    transition: 0.4s ease-in-out;
+}
+
+.btn:hover {
+    /* Box model and Color */
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: #fff;
+}
+
+.sub-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.33;
+    color: #0d1111;
+}
+
+.title.lv2 a {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+/* ========================================== Header ========================================================= */
+.header {
+    /* Positioning */
+    position: sticky;
+    top: -47px;
+    /* Box model */
+    padding-top: 47px;
+    /* Color */
+    background: #fff;
+    /* Others */
+    z-index: 1;
+}
+
+/* ---------------------------------------------- Navbar ------------------------------------------------------ */
+.header .navbar {
+    /* Display and Box model */
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.header .logo {
+    /* Display */
+    display: flex;
+}
+
+/* ---------------------------------------------- Navigation ------------------------------------------------------ */
+.header .navigation {
+    /* Display and Box model */
+    display: flex;
+    margin-left: 215px;
+}
+
+.header .nav-active .nav-link,
+.nav-link:hover,
+.action-link:hover {
+    /* Text */
+    text-shadow: 1px 0 0 currentColor;
+    /* Others */
+    transition-duration: 0.4s;
+}
+
+.header .navigation li .nav-link {
+    /* Box model */
+    padding: 8px 20px;
+    /* Text */
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    /* Color */
+    color: #2f3a3b;
+}
+
+.header li:first-child .nav-link {
+    /* Text */
+    font-weight: 600;
+}
+
+/* ---------------------------------------------- Actions ------------------------------------------------------ */
+.header .actions {
+    /* Display and Box model */
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+    margin-left: auto;
+}
+
+.header .action-link {
+    /* Text */
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    /* Color */
+    color: #494949;
+}
+
+.header .action-btn {
+    /* Box model */
+    min-width: 108px;
+    padding: 15px 13px;
+    border: 1px solid var(--primary-color);
+    /* Text */
+    font-size: 1.6rem;
+    /* Color */
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.header .action-btn:hover {
+    /* Color */
+    color: #fff;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* ========================================== Hero ========================================================= */
+.hero {
+    /* Box model */
+    margin-top: 45px;
+    padding-bottom: 79px;
+}
+
+.hero .body {
+    /* display */
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------------------------------------- Hero left ------------------------------------------------------ */
+.hero .content-block {
+    /* Box model */
+    width: 39.14%;
+}
+
+.hero .sub-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.hero .title {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16;
+    color: #0d1111;
+}
+
+.hero .desc {
+    margin-top: 46px;
+    width: 374px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9da6a5;
+}
+
+.hero .cta-group {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-cta {
+    min-width: 186px;
+    padding: 24px 16px;
+}
+
+.hero .play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.hero .play-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+/* ---------------------------------------------- Hero right ------------------------------------------------------ */
+.hero .img-block {
+    position: relative;
+    /* Box model */
+    margin-left: auto;
+}
+
+.hero .img-block .image {
+    /* Box model */
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+/* ---------------------------------------------- course-quantity ------------------------------------------------------ */
+.hero .course-quantity {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    content: "";
+    display: flex;
+    align-items: center;
+    width: 157px;
+    height: 75px;
+    padding: 17px 25px 18px;
+    background: #fff;
+    border-radius: 18px;
+}
+
+.hero .course-quantity:hover {
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
+}
+
+.hero .book-icon {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+    border-radius: 5px 2px 2px 5px;
+}
+
+.hero .book-icon::before {
+    position: absolute;
+    top: 28px;
+    left: 4px;
+    right: 4px;
+    right: inherit;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.hero .course-quantity p {
+    margin-left: 16px;
+    max-width: 55px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+/* ---------------------------------------------- schedules ------------------------------------------------------ */
+.hero .schedules {
+    position: absolute;
+    bottom: 46px;
+    left: -65px;
+    content: "";
+    display: flex;
+    align-items: center;
+    width: 124px;
+    height: 132px;
+    padding: 16px 0 23px;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 24px;
+}
+
+.hero .schedules:hover {
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
+}
+
+.hero .schedules p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.hero .schedules-icon {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .schedules-icon .icon {
+    width: 74px;
+    height: 6px;
+}
+
+.hero .schedules-icon .icon:nth-child(2) {
+    margin-top: 12px;
+}
+
+.hero .schedules-icon .icon:nth-child(3) {
+    margin-top: 10px;
+}
+
+.hero .schedules-icon .icon:last-child {
+    margin-top: 16px;
+}
+
+/* ---------------------------------------------- active-students ------------------------------------------------------ */
+.hero .active-students {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 35px;
+    background: #fff;
+    border-radius: 24px;
+}
+
+.hero .active-students:hover {
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
+}
+
+.hero .active-students p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.hero .avatar-block {
+    margin-top: 8px;
+    display: flex;
+}
+
+.hero .avatar {
+    width: 33px;
+    height: 33px;
+    margin-left: -7px;
+    object-fit: cover;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero .avatar:first-child {
+    margin-left: 0;
+}
+
+/* ========================================== Features ========================================================= */
+.features {
+    margin-top: 130px;
+}
+/* ---------------------------------------------- row-top ------------------------------------------------------ */
+.features .row-top {
+    width: 50.51%;
+}
+
+.features .row-top .sub-title {
+    letter-spacing: 1.5px;
+}
+
+.features .row-top .heading {
+    margin-top: 18px;
+}
+
+.features .row-top .desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+/* ---------------------------------------------- row-list ------------------------------------------------------ */
+.features .row-list {
+    margin-top: 80px;
+    display: flex;
+    width: 96.06%;
+}
+
+.features .row-list .icon {
+    transition: all 0.4s ease-in-out;
+}
+
+.features .row-list .icon:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.features .item:first-child {
+    width: 33.54%;
+}
+
+.features .item:nth-child(2) {
+    width: 37.63%;
+}
+
+.features .item .function {
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.features .item .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    color: #9da6a5;
+}
+
+.features .item:first-child .desc {
+    width: 168px;
+}
+
+.features .item:nth-child(2) .desc {
+    width: 223px;
+}
+
+.features .item:nth-child(3) .desc {
+    width: 224px;
+}
+
+/* ========================================== Courses ========================================================= */
+.courses {
+    margin-top: 130px;
+}
+
+/* ---------------------------------------------- row-top ------------------------------------------------------ */
+.courses .row-top .sub-title {
+    letter-spacing: 1.5px;
+}
+
+.courses .row-top .heading {
+    margin-top: 18px;
+}
+
+.courses .row-top .desc-cta {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.courses .row-top .desc {
+    width: 44.87%;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767e7e;
+}
+
+.courses .row-top .courses-cta {
+    margin-left: auto;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.courses .row-top .courses-cta:hover {
+    transform: scale(1.1, 1.1);
+    color: #fff;
+    background: var(--primary-color);
+}
+
+/* ---------------------------------------------- row-list ------------------------------------------------------ */
+.courses .row-list {
+    margin-top: 79px;
+    display: flex;
+    gap: 47px;
+}
+
+.courses .row-list .item {
+    position: relative;
+    width: 33.33%;
+    border-radius: 8px;
+}
+
+.courses .row-list .thumb-block {
+    width: 100%;
+    height: 393px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.courses .row-list .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.courses .row-list .thumb:hover {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+
+.courses .row-list .body {
+    position: absolute;
+    bottom: -124px;
+    left: 17px;
+    right: 17px;
+    content: "";
+    display: block;
+    width: 325px;
+    height: 195px;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.08);
+}
+
+.courses .row-list .fee {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .row-list strong {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0d1111;
+}
+
+.courses .row-list .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
+
+.courses .row-list .desc.long {
+    margin-top: 6px;
+}
+
+.courses .row-list .desc-block {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.courses .row-list .dot {
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
+}
+
+.courses .row-list .desc-block .desc {
+    margin-right: 10px;
+}
