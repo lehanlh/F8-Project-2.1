@@ -645,3 +645,120 @@ a {
     text-align: center;
     color: #767e7e;
 }
+
+/* ========================================== Feedback ========================================================= */
+.feedback {
+    margin-top: 264px;
+}
+
+.feedback .row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------- Content-block ------------------------------------------------------ */
+.feedback .content-block {
+    margin: 37px 0;
+    width: 35.82%;
+}
+
+.feedback .content-block .block-quote {
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5d6564;
+}
+
+.feedback .content-block .speaker {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.feedback .content-block .speaker div {
+    margin-right: 5px;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+}
+
+.feedback .content-block .speaker-name {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #070707;
+}
+
+.feedback-btn {
+    display: flex;
+    margin-top: 52px;
+    gap: 0 30px;
+}
+
+.fb-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2ac9bf;
+    color: #2ac9bf;
+    background: #fff;
+}
+
+.fb-btn:hover {
+    color: #fff;
+    background: #2ac9bf;
+    border: 1px solid #2ac9bf;
+    cursor: pointer;
+}
+
+.feedback .content-block .speaker-name span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #767e7e;
+}
+
+/* ---------------------------------------------- Avatar-block ------------------------------------------------------ */
+.feedback .avatar {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback .avatar-1 {
+    right: 171px;
+    bottom: 139px;
+    width: 235px;
+    height: 235px;
+}
+
+.feedback .avatar-2 {
+    top: 0;
+    right: 443px;
+    width: 92px;
+    height: 92px;
+}
+
+.feedback .avatar-3 {
+    top: 19px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
+
+.feedback .avatar-4 {
+    bottom: 29px;
+    right: 32px;
+}
+
+.feedback .avatar-5 {
+    bottom: 0;
+    right: 389px;
+}
+
+.feedback .avatar-6 {
+    bottom: 145px;
+    right: 601px;
+}
