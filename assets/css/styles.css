@@ -35,7 +35,7 @@ a {
     /* Display and Box model */
     display: inline-block;
     min-width: 186px;
-    padding: 20px 16px;
+    padding: 24px 16px;
     border: 1px solid var(--primary-color);
     border-radius: 14px;
     /* Text */
@@ -219,11 +219,6 @@ a {
     margin-top: 52px;
     display: flex;
     align-items: center;
-}
-
-.hero .hero-cta {
-    min-width: 186px;
-    padding: 24px 16px;
 }
 
 .hero .play-btn {
@@ -761,4 +756,28 @@ a {
 .feedback .avatar-6 {
     bottom: 145px;
     right: 601px;
+}
+
+/* ========================================== Call-to-action ========================================================= */
+.call-to-action {
+    margin-top: 130px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.call-to-action .row {
+    display: flex;
+    align-items: center;
+}
+
+.call-to-action .content-block {
+    width: 35.9%;
+    margin-right: 410px;
+}
+
+.call-to-action .desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #767e7e;
 }
