@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    height: 10000px;
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
@@ -699,6 +698,7 @@ a {
     border: 1px solid #2ac9bf;
     color: #2ac9bf;
     background: #fff;
+    transition: all 0.4s;
 }
 
 .fb-btn:hover {
@@ -780,4 +780,96 @@ a {
     font-weight: 400;
     font-size: 1.8rem;
     color: #767e7e;
+}
+
+/* ========================================== Footer ========================================================= */
+.footer {
+    padding: 131px 0 50px;
+}
+
+.footer .row-top {
+    display: flex;
+}
+
+.footer .col:first-child {
+    width: 23.16%;
+}
+
+.footer .col:nth-child(2) {
+    width: 7.8%;
+}
+
+.footer .col:nth-child(3) {
+    margin-left: 144px;
+    width: 9.66%;
+}
+
+.footer .col:nth-child(4) {
+    margin-left: 148px;
+    margin-right: auto;
+    width: 13.42%;
+}
+
+.footer .title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #2e2e2e;
+}
+
+.footer .col .list {
+    margin-top: 25px;
+}
+
+.footer .col li,
+.footer .col .item {
+    margin-top: 20px;
+}
+
+.footer li a,
+.footer .item .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.footer li {
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .item {
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer li:hover,
+.footer .item:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.footer .item .social-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.08);
+}
+
+.footer .item .desc {
+    padding-left: 9px;
+}
+
+.footer .row-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.footer .copyright {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #b0b5b4;
 }
